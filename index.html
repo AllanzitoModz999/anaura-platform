@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANAURA</title>
+    <title>ANAURA - Associação Nacional da Aura</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="ANAURA Logo" />
+    <div class="container">
+        <div class="logo-container">
+            <img src="file_0000000063c471f5aea5e071be7986c4.png" alt="ANAURA Logo" class="logo">
+        </div>
+        
         <h1>ANAURA</h1>
-        <h2>Subtitle goes here</h2>
-    </header>
-    <main>
-        <button onclick="location.href='denuncia.html'">Fazer denúncia</button>
-        <button onclick="location.href='admin.html'">Painel administrativo</button>
-    </main>
+        <p class="subtitle">Associação Nacional da Aura</p>
+        <p class="description">Plataforma para denúncias de crimes de aura</p>
+        
+        <div class="buttons-container">
+            <a href="denuncia.html" class="btn btn-primary">
+                <span class="icon">🚨</span>
+                Fazer Denúncia
+            </a>
+            <a href="login.html" class="btn btn-secondary">
+                <span class="icon">🔐</span>
+                Painel Administrativo
+            </a>
+        </div>
+    </div>
 </body>
 </html>
