@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Form</title>
+</head>
+<body>
+    <h1>Report Form</h1>
+    <form action="/submit-report" method="POST">
+        <label for="reporterName">Your Name:</label><br>
+        <input type="text" id="reporterName" name="reporterName" required><br><br>
+
+        <label for="reportDetails">Report Details:</label><br>
+        <textarea id="reportDetails" name="reportDetails" required></textarea><br><br>
+
+        <input type="submit" value="Submit Report">
+    </form>
+</body>
+</html>
