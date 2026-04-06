@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Administrativo - ANAURA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <a href="index.html" class="btn-back">← Voltar</a>
+            
+            <h1>Painel Administrativo</h1>
+            <p class="login-subtitle">Acesso restrito</p>
+            
+            <form id="loginForm" class="form-login">
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+                
+                <button type="submit" class="btn btn-submit">Acessar Painel</button>
+                
+                <div id="errorMessage" class="error-message hidden">
+                    ⚠️ Senha incorreta!
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
