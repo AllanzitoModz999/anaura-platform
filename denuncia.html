@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Denúncia - ANAURA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="denuncia.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <a href="index.html" class="btn-back">← Voltar</a>
+            
+            <h1>Fazer Denúncia</h1>
+            <p class="form-subtitle">Denuncie crimes de aura de forma segura e anônima</p>
+            
+            <form id="denunciaForm" class="form-denuncia">
+                <div class="form-group">
+                    <label for="nomeSuspeito">Nome do Suspeito:</label>
+                    <input type="text" id="nomeSuspeito" name="nomeSuspeito" required placeholder="Digite o nome completo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tiposCrime">Tipo de Crime de Aura:</label>
+                    <select id="tiposCrime" name="tiposCrime" required>
+                        <option value="">Selecione um tipo de crime</option>
+                        <option value="Farm ilegal de aura">Farm ilegal de aura</option>
+                        <option value="67 ilegal">67 ilegal</option>
+                        <option value="Contrabando de aura">Contrabando de aura</option>
+                        <option value="Ego inflado">Ego inflado</option>
+                        <option value="Aura artificial">Aura artificial</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao" required placeholder="Descreva os detalhes do crime..." rows="6"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="prova">Upload de Prova (Imagem):</label>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="prova" name="prova" accept="image/*" required>
+                        <span class="file-input-label">Escolher arquivo</span>
+                    </div>
+                    <div id="previewContainer" class="preview-container"></div>
+                </div>
+                
+                <button type="submit" class="btn btn-submit">Enviar Denúncia</button>
+            </form>
+            
+            <div id="successMessage" class="success-message hidden">
+                <div class="success-content">
+                    <span class="success-icon">✅</span>
+                    <h2>Denúncia Enviada!</h2>
+                    <p>Denúncia enviada para análise da ANAURA.</p>
+                    <p class="secondary-text">Você será notificado sobre o andamento da investigação.</p>
+                    <a href="index.html" class="btn btn-primary">Voltar à Página Inicial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="denuncia.js"></script>
+</body>
+</html>
